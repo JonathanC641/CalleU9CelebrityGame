@@ -49,7 +49,7 @@ public class CelebrityFrame extends JFrame {
 	private void setupFrame() {
 		// the following are methods INHERITED from JFrame that we can call since
 		// CelebrityFrame is a subclass of JFrame
-		setSize(100, 900);  // (window width, window height)
+		setSize(500, 900);  // (window width, window height)
 		setTitle("Celeb Match");
 		add(panelCards);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -76,6 +76,7 @@ public class CelebrityFrame extends JFrame {
 		if (screen.equals("GAME")) {
 			// send the first clue to the screen
 			gamePanel.addClue(controller.sendClue());
+
 		}
 
 		// present the appropriate panel based on the name provided in "screen"
