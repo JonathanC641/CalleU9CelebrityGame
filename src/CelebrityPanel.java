@@ -207,6 +207,7 @@ public class CelebrityPanel extends JPanel implements ActionListener {
    */
   public void addClue(String clue) {
     clueArea.setText("The clue is: " + clue);
+
   }
   
   /**
