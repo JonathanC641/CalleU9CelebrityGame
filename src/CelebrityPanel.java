@@ -220,6 +220,7 @@ public class CelebrityPanel extends JPanel implements ActionListener {
       clueArea.setBackground(Color.CYAN);
       clueArea.append(success);
       clueArea.append(controller.sendClue());
+
     }else{
       clueArea.setBackground(Color.white);
       clueArea.append(tryAgain);
