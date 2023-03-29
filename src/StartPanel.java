@@ -237,6 +237,7 @@ public class StartPanel extends JPanel implements ActionListener{
       celebrityCount = controller.getCelebrityGameSize();
       celebrityCountLabel.setText(countLabelText + celebrityCount);
     }else if (text.equals("Start Celebrity game")) {
+
       controller.play();
     }
 
