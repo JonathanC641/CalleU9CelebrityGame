@@ -10,7 +10,7 @@ import java.awt.event.ActionEvent;
  * @author cody.henrichsen
  * @version 2.9 18/09/2018 Adjusted the listener functionality.
  */
-public class CelebrityPanel extends JPanel implements ActionListener {
+public class CelebrityPanel extends JPanel  implements ActionListener {
   
   /**
    * The button pressed when making a guess.
@@ -205,6 +205,8 @@ public class CelebrityPanel extends JPanel implements ActionListener {
       }
     }
   }
+
+
   
   /**
    * Helper method for when the ActionListener attached to the timer fires.
@@ -264,4 +266,9 @@ public class CelebrityPanel extends JPanel implements ActionListener {
       guessField.setEnabled(false);
     }
   }
+
+  public Timer getCountdownTimer(){
+    return countdownTimer;
+  }
+
 }
