@@ -56,6 +56,8 @@ public class Celebrity {
 		answer = newAnswer;
 	}
 
+
+
 	public String toString(){
 		return "The Celebrity's name is: " + answer +". The clue for this celebrity is: " + clue + "\n";
 	}

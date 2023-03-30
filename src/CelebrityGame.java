@@ -25,6 +25,8 @@ public class CelebrityGame {
 	 */
 	private ArrayList<Celebrity> celebGameList;
 
+
+
 	/**
 	 * Builds the game and starts the GUI
 	 */
@@ -32,7 +34,6 @@ public class CelebrityGame {
 		celebGameList = new ArrayList<Celebrity>();
 		gameCelebrity = null;
 		gameWindow = new CelebrityFrame(this);
-
 	}
 
 	/**
@@ -110,6 +111,9 @@ public class CelebrityGame {
 	public int getCelebrityGameSize() {
 		return celebGameList.size();  // stub
 	}
+	public void resetCelebList(){
+		celebGameList = new ArrayList<Celebrity>();
+	}
 
 	/**
 	 * Accessor method for the games clue to maintain low coupling between
@@ -120,5 +124,14 @@ public class CelebrityGame {
 	public String sendClue() {
 
 		return gameCelebrity.getClue(); // stub
+	}
+
+	public JFrame getWindow(){
+		return gameWindow;
+	}
+
+	public void reset(){
+		resetCelebList();
+		gameWindow.reset();
 	}
 }
